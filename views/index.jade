@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    div.container
+        -for(let i=0; i<articles.length; i++){
+        section.article
+            h3= articles[i].title
+            img(src="#{articles[i].img_url}")
+            p=articles[i].short_text
+            a(href="articles/#{articles[i].url}") Read more
+        -}

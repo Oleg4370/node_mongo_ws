@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    div.container
+        h3= post.title
+        img(src="/#{post.img_url}")
+        p= post.long_text
+        div.comments
+            p Leave your comment:
+            form(name="newComment")
+                input(name="nickname", type="text", placeholder="Nickname")
+                input(name="id", type="text", value="#{post._id}", hidden)
+                textarea(name='comment', placeholder="Comment")
+                button(type="submit") Submit
+            div.comments-wrap
+                -for(var i=post.comments.length-1; i>=0; i--){
+                 div.comment-item
+                    strong.name= post.comments[i].nickname
+                    p.text= post.comments[i].comment
+                -}
+    script(src="/assets/js/scripts.js")

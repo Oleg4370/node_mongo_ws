@@ -1,0 +1,47 @@
+.container{
+    padding: 15px;
+}
+section.article{
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    margin: 20px;
+
+    text-align: center;
+}
+section.article h3{
+    color: grey;
+}
+img{
+    max-width: 100%;
+}
+p{
+    text-align: left;
+}
+.comments{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid grey;
+}
+.comment-item{
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 lightgray;
+}
+.name{
+    font-weight: bold;
+}
+p.text{
+    color: darkgreen;
+}
+form{
+    width: 50%;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 10px;
+}
+textarea{
+    padding: 10px;
+    border-radius: 6px;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "express server",
+  "version": "1.0.0",
+  "description": "simple express server with mongodb and rest api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oleh_Vls",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "jade": "^1.11.0",
+    "mongodb": "^2.2.26",
+    "serve-favicon": "^2.4.3",
+    "ws": "^3.0.0"
+  }
+}
